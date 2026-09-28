@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mewurk-myntra
+    runtime: static
+    plan: free
+    region: singapore
+    staticPublishPath: ./
+    buildCommand: ""
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
