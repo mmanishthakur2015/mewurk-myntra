@@ -1,43 +1,40 @@
 /* ==========================================================================
-   🎨 THEME CONFIGURATION / थीम सेटिंग्स (MYNTRA THEME)
+   🎨 THEME CONFIGURATION / थीम सेटिंग्स (OLA THEME APPLIED)
    ==========================================================================
    
    👉 HINDI GUIDE - THEME BADALNE KE LIYE:
    --------------------------------------------------------------------------
-   Agar aapko puri website ka color theme change karna hai, toh aapko kisi
-   bhi aur file ko chhedne ki zaroorat nahi hai.
-   Bas is file (theme.css) ke andar niche diye gaye CSS VARIABLES (:root) me
+   Default theme ab OLA (Electric Green & Jet Black) apply kar diya gaya hai.
+   Agar aapko color theme change karna hai, toh bas is file (:root) me
    apne pasandida hex color codes daal dijiye:
 
-   1. --primary-color        : Yeh website ka main color hai (Buttons, Highlights, Links, Badges)
-   2. --primary-hover        : Jab button par mouse le jayein (Hover color)
-   3. --primary-light        : Soft background tint (Tags, light background badges)
-   4. --secondary-color      : Dark contrast color (Dark buttons, Nav links, Heavy headings)
-   5. --accent-color         : Accent color (Stars, tags, secondary badges)
-   6. --gradient-primary     : Main buttons aur Hero badges ke liye gradient
+   1. --primary-color        : Main Brand Color (Buttons, Highlights, Badges) -> OLA GREEN (#00d26a)
+   2. --secondary-color      : Dark Jet Black (#121418)
+   3. --accent-color         : OLA Sporty Lime / Electric Yellow (#d6df22)
+   4. --gradient-primary     : Main buttons & badges ke liye gradient
 
    --------------------------------------------------------------------------
    PRE-SET EXAMPLES (Aap direct copy-paste kar sakte hain):
    --------------------------------------------------------------------------
-   [1] MYNTRA THEME (Current Default):
+   [1] OLA THEME (Current Default):
+       --primary-color: #00d26a;
+       --primary-hover: #00b853;
+       --secondary-color: #121418;
+       --accent-color: #d6df22;
+
+   [2] MYNTRA THEME:
        --primary-color: #ff3f6c;
        --primary-hover: #e72754;
        --secondary-color: #282c3f;
        --accent-color: #ff905a;
 
-   [2] FLIPKART THEME:
+   [3] FLIPKART THEME:
        --primary-color: #2874f0;
        --primary-hover: #1257c7;
        --secondary-color: #212121;
        --accent-color: #ff9f00;
 
-   [3] AMAZON THEME:
-       --primary-color: #ff9900;
-       --primary-hover: #e68a00;
-       --secondary-color: #131921;
-       --accent-color: #146eb4;
-
-   [4] MEWURK ORIGINAL BLUE:
+   [4] MEWURK CLASSIC BLUE:
        --primary-color: #28406e;
        --primary-hover: #1e3155;
        --secondary-color: #0d1b2a;
@@ -45,55 +42,55 @@
    ========================================================================== */
 
 :root {
-  /* --- MYNTRA BRAND COLOR PALETTE --- */
-  --primary-color: #ff3f6c;                 /* Myntra Signature Coral Pink */
-  --primary-hover: #e72754;                 /* Darker coral for active/hover states */
-  --primary-light: #fff0f3;                 /* Very light pink for badge backgrounds */
-  --primary-glow: rgba(255, 63, 108, 0.25); /* Glow effect for buttons/cards */
+  /* --- OLA BRAND COLOR PALETTE (DEFAULT THEME) --- */
+  --primary-color: #00d26a;                 /* Ola Signature Vibrant Green */
+  --primary-hover: #00b853;                 /* Darker green for hover state */
+  --primary-light: #e8f9f0;                 /* Soft light green tint for badges */
+  --primary-glow: rgba(0, 210, 106, 0.32);  /* Glowing green shadow */
   
-  --secondary-color: #282c3f;               /* Myntra Dark Charcoal for navigation & strong contrast */
-  --secondary-hover: #1e2130;               /* Deeper dark shade */
-  --secondary-light: #f5f5f6;               /* Light grayish contrast */
+  --secondary-color: #121418;               /* Ola Jet Black for modern tech look */
+  --secondary-hover: #000000;               /* Pure Deep Black */
+  --secondary-light: #f3f6f4;               /* Light grayish contrast */
 
-  --accent-color: #ff905a;                  /* Myntra Sunset Orange accent */
-  --accent-hover: #e87b44;
-  --accent-yellow: #ffaa00;                 /* Gold / Star rating color */
-  --accent-green: #14cda8;                  /* Verified green / tick color */
-  --accent-purple: #7c5cff;                 /* AI / Feature purple */
+  --accent-color: #d6df22;                  /* Ola Iconic Sporty Lime / Electric Yellow */
+  --accent-hover: #c4cc1b;
+  --accent-yellow: #ffb703;                 /* Gold / Star rating color */
+  --accent-green: #00d26a;                  /* Verified badge */
+  --accent-purple: #7c5cff;                 /* AI purple */
 
   /* --- BACKGROUND COLORS --- */
   --bg-body: #ffffff;                       /* Main body background */
   --bg-card: #ffffff;                       /* Card background */
-  --bg-subtle: #fbfbfd;                     /* Light subtle background for alternating sections */
-  --bg-tinted: #fff7f9;                     /* Soft Myntra pink tinted background */
-  --bg-footer: #1e2230;                     /* Deep modern footer background */
-  --bg-footer-card: #282c3f;                /* Dark card inside footer */
+  --bg-subtle: #f8faf9;                     /* Light subtle background */
+  --bg-tinted: #f0fdf4;                     /* Soft Ola green tinted background */
+  --bg-footer: #0c0e12;                     /* Deep modern Ola black footer */
+  --bg-footer-card: #161920;                /* Dark card inside footer */
 
   /* --- TEXT COLORS --- */
-  --text-primary: #282c3f;                  /* Main headings & primary body text */
-  --text-secondary: #535766;                /* Subtitles & descriptive text */
-  --text-muted: #94969f;                    /* Minor captions & helper text */
+  --text-primary: #121418;                  /* Main headings & primary body text */
+  --text-secondary: #4a525d;                /* Subtitles & descriptive text */
+  --text-muted: #858d99;                    /* Minor captions & helper text */
   --text-white: #ffffff;                    /* Pure white text */
-  --text-brand: #ff3f6c;                    /* Branded highlight text */
+  --text-brand: #00b853;                    /* Branded highlight text */
 
   /* --- BORDERS & LINES --- */
-  --border-light: #eaeaec;                  /* Crisp light borders */
-  --border-card: #ececf2;                   /* Subtle card borders */
-  --border-focus: #ff3f6c;                  /* Input/element focus border */
+  --border-light: #e6eae8;                  /* Crisp light borders */
+  --border-card: #e4ebe7;                   /* Subtle card borders */
+  --border-focus: #00d26a;                  /* Input/element focus border */
 
   /* --- GRADIENTS --- */
-  --gradient-primary: linear-gradient(135deg, #ff3f6c 0%, #ff527b 50%, #ff758c 100%);
-  --gradient-secondary: linear-gradient(135deg, #ff3f6c 0%, #ff905a 100%);
-  --gradient-hero-bg: linear-gradient(180deg, #fff0f3 0%, #fdf5f7 60%, #ffffff 100%);
-  --gradient-badge: linear-gradient(90deg, #ff3f6c 0%, #ff527b 100%);
-  --gradient-dark: linear-gradient(135deg, #282c3f 0%, #1e2230 100%);
+  --gradient-primary: linear-gradient(135deg, #00d26a 0%, #00b853 60%, #16aa51 100%);
+  --gradient-secondary: linear-gradient(135deg, #121418 0%, #00d26a 100%);
+  --gradient-hero-bg: linear-gradient(180deg, #ecfdf3 0%, #f6fdf8 60%, #ffffff 100%);
+  --gradient-badge: linear-gradient(90deg, #00d26a 0%, #d6df22 100%);
+  --gradient-dark: linear-gradient(135deg, #121418 0%, #1a202c 100%);
 
   /* --- SHADOWS --- */
-  --shadow-sm: 0 2px 8px rgba(40, 44, 63, 0.06);
-  --shadow-md: 0 4px 16px rgba(40, 44, 63, 0.08);
-  --shadow-lg: 0 12px 32px rgba(40, 44, 63, 0.12);
-  --shadow-hover: 0 16px 40px rgba(255, 63, 108, 0.16);
-  --shadow-btn: 0 6px 20px rgba(255, 63, 108, 0.35);
+  --shadow-sm: 0 2px 8px rgba(18, 20, 24, 0.06);
+  --shadow-md: 0 4px 16px rgba(18, 20, 24, 0.08);
+  --shadow-lg: 0 12px 32px rgba(18, 20, 24, 0.12);
+  --shadow-hover: 0 16px 40px rgba(0, 210, 106, 0.22);
+  --shadow-btn: 0 6px 20px rgba(0, 210, 106, 0.38);
 
   /* --- BORDER RADIUS --- */
   --radius-xs: 4px;
@@ -112,6 +109,24 @@
 /* ==========================================================================
    DYNAMIC THEME PRESET CLASSES (For Live Theme Switcher)
    ========================================================================== */
+
+/* Myntra Coral Pink Theme */
+body.theme-myntra {
+  --primary-color: #ff3f6c;
+  --primary-hover: #e72754;
+  --primary-light: #fff0f3;
+  --primary-glow: rgba(255, 63, 108, 0.25);
+  --secondary-color: #282c3f;
+  --secondary-hover: #1e2130;
+  --accent-color: #ff905a;
+  --bg-tinted: #fff7f9;
+  --text-brand: #ff3f6c;
+  --gradient-primary: linear-gradient(135deg, #ff3f6c 0%, #ff527b 50%, #ff758c 100%);
+  --gradient-secondary: linear-gradient(135deg, #ff3f6c 0%, #ff905a 100%);
+  --gradient-hero-bg: linear-gradient(180deg, #fff0f3 0%, #fdf5f7 60%, #ffffff 100%);
+  --shadow-hover: 0 16px 40px rgba(255, 63, 108, 0.16);
+  --shadow-btn: 0 6px 20px rgba(255, 63, 108, 0.35);
+}
 
 /* Mewurk Original Blue Theme */
 body.theme-mewurk {
@@ -165,24 +180,6 @@ body.theme-amazon {
   --gradient-hero-bg: linear-gradient(180deg, #fff5e6 0%, #fdfaf6 60%, #ffffff 100%);
   --shadow-hover: 0 16px 40px rgba(255, 153, 0, 0.16);
   --shadow-btn: 0 6px 20px rgba(255, 153, 0, 0.35);
-}
-
-/* Emerald Green Theme */
-body.theme-emerald {
-  --primary-color: #059669;
-  --primary-hover: #047857;
-  --primary-light: #ecfdf5;
-  --primary-glow: rgba(5, 150, 105, 0.25);
-  --secondary-color: #064e3b;
-  --accent-color: #10b981;
-  --accent-hover: #059669;
-  --bg-tinted: #f0fdf4;
-  --text-brand: #059669;
-  --gradient-primary: linear-gradient(135deg, #059669 0%, #10b981 100%);
-  --gradient-secondary: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
-  --gradient-hero-bg: linear-gradient(180deg, #ecfdf5 0%, #f7fef9 60%, #ffffff 100%);
-  --shadow-hover: 0 16px 40px rgba(5, 150, 105, 0.16);
-  --shadow-btn: 0 6px 20px rgba(5, 150, 105, 0.35);
 }
 
 /* Royal Purple Theme */

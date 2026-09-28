@@ -1,6 +1,6 @@
-# 🌟 Mewurk Website Clone - Myntra Theme Applied
+# 🌟 Mewurk Website Clone - OLA Theme Applied
 
-Aapka Mewurk website ka pura responsive frontend **Myntra Theme** ke saath taiyaar hai aur `C:\mewurk-myntra` folder me save kar diya gaya hai!
+Aapka Mewurk website ka pura responsive frontend **OLA Theme** (Vibrant Electric Green `#00d26a` & Jet Black `#121418` with Sporty Lime `#d6df22`) ke saath taiyaar hai aur `C:\mewurk-myntra` folder me save kar diya gaya hai!
 
 ---
 
@@ -43,16 +43,16 @@ Theme change karne ke **2 aasan tareeqe** hain:
 
 ```css
 :root {
-  /* --- MYNTRA BRAND COLOR PALETTE --- */
-  --primary-color: #ff3f6c;                 /* Main Brand Color (Buttons, Highlights, Badges) */
-  --primary-hover: #e72754;                 /* Hover state par color */
-  --primary-light: #fff0f3;                 /* Light tint background for badges */
-  --secondary-color: #282c3f;               /* Dark Charcoal (Headings, dark buttons) */
-  --accent-color: #ff905a;                  /* Accent Orange */
+  /* --- OLA BRAND COLOR PALETTE (CURRENT DEFAULT) --- */
+  --primary-color: #00d26a;                 /* Ola Vibrant Green (Buttons, Highlights, Badges) */
+  --primary-hover: #00b853;                 /* Hover state par darker green */
+  --primary-light: #e8f9f0;                 /* Soft light green tint background */
+  --secondary-color: #121418;               /* Jet Black (Headings, dark buttons) */
+  --accent-color: #d6df22;                  /* Ola Sporty Lime / Electric Yellow */
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #ff3f6c 0%, #ff527b 50%, #ff758c 100%);
-  --gradient-hero-bg: linear-gradient(180deg, #fff0f3 0%, #fdf5f7 60%, #ffffff 100%);
+  --gradient-primary: linear-gradient(135deg, #00d26a 0%, #00b853 60%, #16aa51 100%);
+  --gradient-hero-bg: linear-gradient(180deg, #ecfdf3 0%, #f7fef9 60%, #ffffff 100%);
 }
 ```
 

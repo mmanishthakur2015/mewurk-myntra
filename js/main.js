@@ -64,23 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyThemeClass(themeName) {
     // Remove existing theme classes
     document.body.classList.remove(
+      'theme-myntra',
       'theme-mewurk',
       'theme-flipkart',
       'theme-amazon',
-      'theme-emerald',
       'theme-purple'
     );
 
-    if (themeName && themeName !== 'myntra') {
+    if (themeName && themeName !== 'ola') {
       document.body.classList.add(`theme-${themeName}`);
       localStorage.setItem('mewurk_selected_theme', themeName);
     } else {
-      localStorage.setItem('mewurk_selected_theme', 'myntra');
+      localStorage.setItem('mewurk_selected_theme', 'ola');
     }
 
     // Update active button state
     presetButtons.forEach((btn) => {
-      if (btn.getAttribute('data-theme') === (themeName || 'myntra')) {
+      if (btn.getAttribute('data-theme') === (themeName || 'ola')) {
         btn.classList.add('active');
       } else {
         btn.classList.remove('active');
